@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+
+hr {
+    position: absolute;
+    top: 100px;
+    height: 200px;
+    background-color: rgba(0, 130, 120, 0.1);
+    border: none;
+    width: 100%;
+    z-index: -1;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+#logo_area {
+    margin-top: 26px;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.bodytext {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+#logo_text {
+    font-size: 16px;
+    position: relative;
+}
+
+#logotext2 {
+    font-weight: bold;
+    color: #008278;
+}
+
+#title1, #title2 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    color: #022851;
+    text-align: right;
+}
+
+main {
+    /* position: absolute; */
+    display: flex;
+    column-gap: 80px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.tile {
+    flex: 50%;
+    /* padding-right: 100px; */
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: block;
+        /* flex-direction: column; */
+        width: 80%;
+    }
+
+    #title1, #title2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .bodytext {
+        font-size: 18px;
+    }
+
+    header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: block;
+        margin-top: 64px;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        top: 0;
+        height: 100px;
+    }
+
+    #logo_area {
+        margin-top: 40px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    #second_tile {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
